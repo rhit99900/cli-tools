@@ -12,6 +12,7 @@ func main() {
 	add := flag.String("add", "", "Task to add")
 	list := flag.Bool("list", false, "List all todos")
 	done := flag.Int("done", -1, "Mark todo as done (by index)")
+	delete := flag.Int("delete", -1, "Delete todo by index")
 
 	flag.Parse()
 
@@ -46,6 +47,16 @@ func main() {
 			todos[index].Done = true
 			saveTodos(fileName, todos)
 			fmt.Println("Marked as done:", todos[index].Task)
+
+		case *delete >= 0:
+			index := *delete - 1
+			if index < 0 || index >= len(todos) {
+				fmt.Println("Invalid todo index")
+			}
+			removed := todos[index]
+			todos = append(todos[:index], todos[index+1:]...) // Remove todos, Append entries before the index and after into the list.
+			saveTodos(fileName, todos)
+			fmt.Println("Deleted:", removed.Task)
 
 		default:
 			fmt.Println("Usage:")
