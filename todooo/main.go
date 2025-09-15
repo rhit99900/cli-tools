@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-const fileName = "todos.json"
+const fileName = "/Library/WebServer/Documents/dev/Personal/cli-tools/todos.json"
 
 func main() {
 	add := flag.String("add", "", "Task to add")
