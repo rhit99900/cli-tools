@@ -4,11 +4,11 @@ A lightweight command-line todo list application written in Go that helps you ma
 
 ## Features
 
-- ✅ Add new tasks
-- 📋 List all tasks with status indicators
-- ✔️ Mark tasks as completed
-- 💾 Persistent storage using JSON
-- 🚀 Fast and simple CLI interface
+- Add new tasks
+- List all tasks with status indicators
+- Mark tasks as completed
+- Persistent storage using JSON
+- Fast and simple CLI interface
 
 ## Installation
 
@@ -130,7 +130,6 @@ This project is open source. Feel free to use and modify as needed.
 
 ## Future Enhancements
 
-- [ ] Delete tasks functionality
 - [ ] Edit existing tasks
 - [ ] Task priorities
 - [ ] Due dates
