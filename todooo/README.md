@@ -17,52 +17,52 @@ A lightweight command-line todo list application written in Go that helps you ma
 
 ### Build from source
 ```bash
-go build -o todo
+go build -o todooo
 ```
 
 ## Usage
 
 ### Add a new task
 ```bash
-./todo -add "Your task description"
+./todooo -add "Your task description"
 ```
 
 ### List all tasks
 ```bash
-./todo -list
+./todooo -list
 ```
 
 ### Mark a task as done
 ```bash
-./todo -done <task_number>
+./todooo -done <task_number>
 ```
 Note: Task numbers start from 1 (as displayed in the list)
 
 ### Show help
 ```bash
-./todo
+./todooo
 ```
 
 ## Examples
 
 ```bash
 # Add some tasks
-./todo -add "Learn Go basics"
-./todo -add "Build a CLI tool"
-./todo -add "Write documentation"
+./todooo -add "Learn Go basics"
+./todooo -add "Build a CLI tool"
+./todooo -add "Write documentation"
 
 # List all tasks
-./todo -list
+./todooo -list
 # Output:
 # 1: [ ] Learn Go basics
 # 2: [ ] Build a CLI tool
 # 3: [ ] Write documentation
 
 # Mark first task as done
-./todo -done 1
+./todooo -done 1
 
 # List tasks again
-./todo -list
+./todooo -list
 # Output:
 # 1: [x] Learn Go basics
 # 2: [ ] Build a CLI tool
